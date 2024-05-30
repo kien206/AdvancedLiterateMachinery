@@ -210,7 +210,7 @@ def get_args(is_train=True):
     # orig paper uses this for fast benchmarking
     parser.add_argument('--fast_acc', action='store_true', help='Fast average accuracy computation')
    
-    # parser.add_argument("--local_rank", type=int, default=-1)
+    parser.add_argument("--local_rank", type=int, default=-1)
     parser.add_argument('--world_size', default=1, type=int,
                         help='number of distributed processes')
     parser.add_argument('--dist_url', default='env://', help='url used to set up distributed training')
